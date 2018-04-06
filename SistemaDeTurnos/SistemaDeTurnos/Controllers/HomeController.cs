@@ -13,6 +13,7 @@ namespace SistemaDeTurnos.Controllers
         public IActionResult Index()
         {
             return View();
+            /*la vaina*/
         }
 
         public IActionResult About()
