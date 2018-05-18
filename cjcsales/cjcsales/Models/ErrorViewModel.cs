@@ -1,6 +1,6 @@
 using System;
 
-namespace CJCSales.Models
+namespace cjcsales.Models
 {
     public class ErrorViewModel
     {
