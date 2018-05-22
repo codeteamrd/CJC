@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SistemaDeTurnos.Models;
+//
+using SistemaDeTurnos.Controllers;
 
 namespace SistemaDeTurnos.Controllers
 {
