@@ -18,11 +18,20 @@ namespace SistemaDeTurnos.Controllers
             /*la vaina*/
         }
 
-        public IActionResult estatus()
+        public IActionResult credencial()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "klk";
 
             return View();
+                
+        }
+
+        public IActionResult estatus()
+        {
+            ViewData["Message"] = "klk";
+
+            return View();
+
         }
 
         public IActionResult About()
