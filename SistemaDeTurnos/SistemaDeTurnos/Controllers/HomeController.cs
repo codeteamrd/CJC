@@ -42,6 +42,14 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
+        public IActionResult historial()
+        {
+            ViewData["Message"] = "klk";
+
+            return View();
+
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
