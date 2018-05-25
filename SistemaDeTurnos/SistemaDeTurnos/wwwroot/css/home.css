@@ -19,7 +19,10 @@
 
   .con{
       background-color: blue;
+      font-size: 1px;
+      border-width: 1px;
   }
+
 
    .tipografia1{
     font-family: Verdana;
