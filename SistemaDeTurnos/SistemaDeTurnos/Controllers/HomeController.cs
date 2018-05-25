@@ -26,6 +26,21 @@ namespace SistemaDeTurnos.Controllers
                 
         }
 
+        public IActionResult VIP()
+        {
+            ViewData["Message"] = "klk";
+
+            return View();
+
+        }
+
+
+
+
+
+
+
+
         public IActionResult estatus()
         {
             ViewData["Message"] = "klk";
