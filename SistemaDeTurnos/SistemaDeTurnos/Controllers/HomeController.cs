@@ -35,12 +35,6 @@ namespace SistemaDeTurnos.Controllers
         }
 
 
-
-
-
-
-
-
         public IActionResult estatus()
         {
             ViewData["Message"] = "klk";
@@ -50,6 +44,14 @@ namespace SistemaDeTurnos.Controllers
         }
 
         public IActionResult menu()
+        {
+            ViewData["Message"] = "klk";
+
+            return View();
+
+        }
+
+        public IActionResult menuDos()
         {
             ViewData["Message"] = "klk";
 
