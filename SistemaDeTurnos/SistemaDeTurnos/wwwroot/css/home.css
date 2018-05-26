@@ -18,9 +18,10 @@
   }
 
   .con{
-      background-color: blue;
-      font-size: 1px;
-      border-width: 1px;
+    border: 1px solid black;
+    padding: 25px 50px 75px;
+    background-color: lightblue;
+}
   }
 
 
