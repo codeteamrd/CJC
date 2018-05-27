@@ -18,21 +18,14 @@
   }
 
   .con{
-    border: 1px solid black;
-    padding: 25px 50px 75px;
-    background-color: lightblue;
-}
-  
+      background-color: blue;
+      font-size: 1px;
+      border-width: 1px;
+  }
 
 
    .tipografia1{
     font-family: Verdana;
     font-family: 'PT Sans';
     text-align: center;
-}
-
-.home {
-  width: 16px;
-  height: 24px;
- 
 }
