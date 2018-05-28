@@ -67,6 +67,13 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
+        public IActionResult registroUsuario()
+        {
+            ViewData["Message"] = "klk";
+
+            return View();
+
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
