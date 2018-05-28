@@ -74,6 +74,14 @@ namespace SistemaDeTurnos.Controllers
             return View();
 
         }
+
+        public IActionResult loginAdmin()
+        {
+            ViewData["Message"] = "klk";
+
+            return View();
+
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
