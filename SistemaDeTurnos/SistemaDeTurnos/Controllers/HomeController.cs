@@ -43,6 +43,14 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
+        public IActionResult Editar_Estatus()
+        {
+            ViewData["Message"] = "";
+
+            return View();
+
+        }
+
         public IActionResult menu()
         {
             ViewData["Message"] = "klk";
