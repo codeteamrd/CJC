@@ -20,28 +20,19 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult credencial()
         {
-            ViewData["Message"] = "klk";
+            ViewData["Message"] = "";
 
             return View();
                 
         }
 
-        public IActionResult VIP()
-        {
-            ViewData["Message"] = "klk";
-
-            return View();
-
-        }
-
-
         public IActionResult estatus()
         {
-            ViewData["Message"] = "klk";
+            ViewData["Message"] = "";
 
             return View();
 
-        }
+           }
 
         public IActionResult Editar_Estatus()
         {
@@ -53,7 +44,7 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult RegistroEstatus()
         {
-            ViewData["Message"] = "klk";
+            ViewData["Message"] = "";
 
             return View();
 
@@ -61,7 +52,7 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult DetallesEstatus()
         {
-            ViewData["Message"] = "klk";
+            ViewData["Message"] = "";
 
             return View();
 
@@ -69,7 +60,7 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult menu()
         {
-            ViewData["Message"] = "klk";
+            ViewData["Message"] = "";
 
             return View();
 
@@ -77,7 +68,7 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult menuDos()
         {
-            ViewData["Message"] = "klk";
+            ViewData["Message"] = "";
 
             return View();
 
@@ -85,7 +76,7 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult historial()
         {
-            ViewData["Message"] = "klk";
+            ViewData["Message"] = "";
 
             return View();
 
@@ -93,7 +84,7 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult cajaAsegurado()
         {
-            ViewData["Message"] = "klk";
+            ViewData["Message"] = "";
 
             return View();
 
@@ -101,25 +92,12 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult loginAdmin()
         {
-            ViewData["Message"] = "klk";
+            ViewData["Message"] = "";
 
             return View();
 
         }
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
+        
         public IActionResult asegurado()
         {
             ViewData["Message"] = "Your asegurado page.";
