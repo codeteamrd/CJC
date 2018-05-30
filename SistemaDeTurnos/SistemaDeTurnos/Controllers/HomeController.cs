@@ -75,7 +75,7 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
-        public IActionResult registroUsuario()
+        public IActionResult cajaAsegurado()
         {
             ViewData["Message"] = "klk";
 
