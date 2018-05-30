@@ -51,6 +51,22 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
+        public IActionResult RegistroEstatus()
+        {
+            ViewData["Message"] = "klk";
+
+            return View();
+
+        }
+
+        public IActionResult DetallesEstatus()
+        {
+            ViewData["Message"] = "klk";
+
+            return View();
+
+        }
+
         public IActionResult menu()
         {
             ViewData["Message"] = "klk";
