@@ -2,6 +2,25 @@
     ViewData["Title"] = "Registro Estatus";
 }
  
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="~/Home/cajaAsegurado">Caja Asegurado</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="~/Home/RegistroEstatus">Lista Usuarios</a></li>
+          <li><a href="#">Registrar Usuario</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Historial Diario</a></li>
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+  </div>
+</nav>
 
 <a href="~/Home/agregarEstatus" class="btn btn-primary" style="font-size: 25px;">Agragar</a>
 <table class="table table-dark">
@@ -26,7 +45,7 @@
             <td>65489</td>
             <td>VIP</td>
             <td>
-                <a class="btn btn-success"> Detalles</a>
+                <a class="btn btn-success"  href="~/Home/detallesEstatus"> Detalles</a>
                 <a class="btn btn-primary" href="~/Home/Editar_Estatus">Editar</a>
                 <a class="btn btn-danger">Eliminar</a>
             </td>
@@ -40,7 +59,7 @@
             <td>65489</td>
             <td>VIP</td>
             <td>
-                <a class="btn btn-success"> Detalles</a>
+                <a class="btn btn-success"  href="~/Home/detallesEstatus"> Detalles</a>
                 <a class="btn btn-primary" href="~/Home/Editar_Estatus">Editar</a>
                 <a class="btn btn-danger">Eliminar</a>
             </td>
@@ -54,7 +73,7 @@
             <td>65489</td>
             <td>VIP</td>
             <td>
-                <a class="btn btn-success"> Detalles</a>
+                <a class="btn btn-success"  href="~/Home/detallesEstatus"> Detalles</a>
                 <a class="btn btn-primary" href="~/Home/Editar_Estatus">Editar</a>
                 <a class="btn btn-danger">Eliminar</a>
             </td>
@@ -68,7 +87,7 @@
             <td>65489</td>
             <td>VIP</td>
             <td>
-                <a class="btn btn-success"> Detalles</a>
+                <a class="btn btn-success"  href="~/Home/detallesEstatus"> Detalles</a>
                 <a class="btn btn-primary" href="~/Home/Editar_Estatus">Editar</a>
                 <a class="btn btn-danger">Eliminar</a>
 </tr>
@@ -82,7 +101,7 @@
             <td>65489</td>
             <td>VIP</td>
             <td>
-                <a class="btn btn-success"> Detalles</a>
+                <a class="btn btn-success"  href="~/Home/detallesEstatus"> Detalles</a>
                 <a class="btn btn-primary" href="~/Home/Editar_Estatus">Editar</a>
                 <a class="btn btn-danger">Eliminar</a>
             </td>
@@ -97,7 +116,7 @@
             <td>65489</td>
             <td>VIP</td>
             <td>
-                <a class="btn btn-success"> Detalles</a>
+                <a class="btn btn-success"  href="~/Home/detallesEstatus"> Detalles</a>
                 <a class="btn btn-primary" href="~/Home/Editar_Estatus">Editar</a>
                 <a class="btn btn-danger">Eliminar</a>
             </td>
@@ -111,13 +130,21 @@
             <td>65489</td>
             <td>VIP</td>
             <td>
-                <a class="btn btn-success"> Detalles</a>
+                <a class="btn btn-success"  href="~/Home/detallesEstatus"> Detalles</a>
                 <a class="btn btn-primary" href="~/Home/Editar_Estatus">Editar</a>
                 <a class="btn btn-danger">Eliminar</a>
             </td>
         </tr>
-
-     
     </tbody>
 </table>    
         
+<footer class="container-fluid text-center">
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2018-2020 Company CJC</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+</footer>

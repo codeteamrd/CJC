@@ -52,7 +52,7 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
-        public IActionResult DetallesEstatus()
+        public IActionResult detallesEstatus()
         {
             ViewData["Message"] = "";
 

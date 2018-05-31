@@ -3,12 +3,30 @@
     ViewData["Title"] = "Editar_Estatus";
 }
 
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="~/Home/cajaAsegurado">Caja Asegurado</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="~/Home/RegistroEstatus">Lista Usuarios</a></li>
+          <li><a href="#">Registrar Usuario</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Historial Diario</a></li>
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+  </div>
+</nav>
 
     <div class="container">
         <div class="py-5 text-center">
            <img src="~/images/Tuerca_Setting.png" alt="30x20" class="img-rounded" width="72" height="72">
-            <h2>Editar Estatus</h2>
+            <h2>Editar Usuario</h2>
      </div>
 
         <div class="row">
@@ -195,3 +213,5 @@
             </ul>
         </footer>
     </div>
+
+    

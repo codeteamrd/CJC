@@ -3,6 +3,26 @@
     ViewData["Title"] = "agregarEstatus";
 }
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="~/Home/cajaAsegurado">Caja Asegurado</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="~/Home/RegistroEstatus">Lista Usuarios</a></li>
+          <li><a href="#">Registrar Usuario</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Historial Diario</a></li>
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+  </div>
+</nav>
+
     <div class="container">
         <div class="py-5 text-center">
            <img src="~/images/agregarUsuario.png" alt="30x20" class="img-rounded" width="72" height="72">
@@ -85,7 +105,7 @@
 
                     </div>
                     <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit"style="text-align:center;">Confirmar</button>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit"style="text-align:center;">Agregar</button>
 
                 </form>
             </div>
@@ -100,3 +120,4 @@
             </ul>
         </footer>
     </div>
+    
