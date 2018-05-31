@@ -1,0 +1,82 @@
+@{
+    ViewData["Title"] = "HistorialDiario";
+}
+
+<!--Barra superior-->
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="~/Home/cajaAsegurado">Caja Asegurado</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="~/Home/RegistroEstatus">Registro de usuarios</a></li>
+          <li><a href="~/Home/agregarEstatus">Agregar usuarios</a></li>
+        </ul>
+      </li>
+      <li><a href="~/Home/historialDiario">Historial Diario</a></li>
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+  </div>
+</nav>
+
+<!--lista-->
+<div class="container">
+  <h2>Historial Diario</h2> 
+  <a href="" class="btn btn-danger" style="font-size: 25px;">Reiniciar</a>          
+  <table class="table table-striped">
+    <thead>
+      <tr>
+         <th>Ticket</th>
+         <th>Estatus</th>
+         <th>Area</th>
+         <th>Hora</th>
+     </tr>
+    </thead>
+    <tbody>      
+      <tr class="">
+         <td>1-L</td>
+         <td>VIP</td>
+         <td>laboratorio</td>
+         <td>7:30</td>
+      </tr>
+      <tr class="danger">
+        <td>2-S</td>
+        <td>Comun</td>
+        <td>Sonografia</td>
+        <td>7:40</td>
+     </tr>
+     <tr class="">
+        <td>3-S</td>
+        <td>Comun</td>
+        <td>Sonografia</td>
+        <td>7:43</td>
+     </tr>                     
+    </tbody>
+  </table>
+</div>
+
+<!--barra inferior-->
+<footer class="container-fluid text-center">
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2018-2020 Company CJC</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>        
+        <li class="list-inline-item"><a href="#">Support</a></li>
+       </ul>
+   </footer>
+</footer>

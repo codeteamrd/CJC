@@ -32,9 +32,7 @@ namespace SistemaDeTurnos.Controllers
 
             return View();
 
-           }
-
-        
+        }
 
         public IActionResult RegistroEstatus()
         {
@@ -100,6 +98,14 @@ namespace SistemaDeTurnos.Controllers
         }
 
         public IActionResult loginAdmin()
+        {
+            ViewData["Message"] = "";
+
+            return View();
+
+        }
+
+         public IActionResult historialDiario()
         {
             ViewData["Message"] = "";
 
