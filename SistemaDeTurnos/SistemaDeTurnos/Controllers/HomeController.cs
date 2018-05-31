@@ -34,7 +34,9 @@ namespace SistemaDeTurnos.Controllers
 
            }
 
-        public IActionResult Editar_Estatus()
+        
+
+        public IActionResult RegistroEstatus()
         {
             ViewData["Message"] = "";
 
@@ -42,7 +44,7 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
-        public IActionResult RegistroEstatus()
+        public IActionResult agregarEstatus()
         {
             ViewData["Message"] = "";
 
@@ -58,6 +60,13 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
+        public IActionResult Editar_Estatus()
+        {
+            ViewData["Message"] = "";
+
+            return View();
+
+        }
         public IActionResult menu()
         {
             ViewData["Message"] = "";
