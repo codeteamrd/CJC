@@ -65,6 +65,14 @@ namespace SistemaDeTurnos.Controllers
             return View();
 
         }
+
+        public IActionResult eliminarEstatus()
+        {
+            ViewData["Message"] = "";
+
+            return View();
+
+        }
         public IActionResult menu()
         {
             ViewData["Message"] = "";
