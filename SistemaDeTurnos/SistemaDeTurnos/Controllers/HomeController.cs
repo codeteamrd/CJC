@@ -18,6 +18,13 @@ namespace SistemaDeTurnos.Controllers
             /*la vaina*/
         }
 
+        public IActionResult menuAdmin()
+        {
+            ViewData["Message"] = "";
+
+            return View();
+                
+        }
         public IActionResult credencial()
         {
             ViewData["Message"] = "";
