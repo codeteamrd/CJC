@@ -1,3 +1,10 @@
+Pendientes  
+-----------------------------
+LoginAdmin
+Validacion de la credencial
+Select con join para historial diario
+botones de traduccion
+*****************************
 Models
 -----------------------------
 *UsuarioAdmin*
