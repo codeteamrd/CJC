@@ -2,19 +2,6 @@
 <html>
 <head>
 
-    <!--
-    nombre de pantallas
-    pan1 = index ->celso
-    pan2 = asegurado ->joel
-    pan3 = estatus ->chris
-    pant6 = credencial ->joel
-    pan4 = menu ->chris
-    pan5 = historial ->joel
-    pan7 = loginAdmin ->celso
-    pan8 = cajaAsegurado -> joel
-    pan9 = menuDos
-    -->
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SistemaDeTurnos</title>
@@ -32,8 +19,9 @@
     </environment>
 </head>
 <body>
+    
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <!--    <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -41,13 +29,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!--  <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">SistemaDeTurnos</a>-->
+                  <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">SistemaDeTurnos</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Index</a></li>
-                    <!--<li><a asp-area="" asp-controller="Home" asp-action="Contact"> VIP Login</a></li>-->
-                    <!--<li><a asp-area="" asp-controller="Home" asp-action="About">Config Login </a></li>-->
                     <li><a asp-area="" asp-controller="" asp-action="asegurado">asegurado </a></li>
                     <li><a asp-area="" asp-controller="" asp-action="estatus">estatus </a></li>
                     <li><a asp-area="" asp-controller="" asp-action="credencial">credencial </a></li>
@@ -59,7 +45,7 @@
                     <li><a asp-area="" asp-controller="" asp-action="Editar_Estatus">Editar_Estatus</a></li>
                 </ul>
             </div>
-        </div>
+        --></div>
     </nav>
     <div class="container body-content">
         @RenderBody()
@@ -68,7 +54,7 @@
             <p>&copy; 2018 - SistemaDeTurnos</p>
         </footer>-->
     </div>
-
+        
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>

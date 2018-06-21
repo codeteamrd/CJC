@@ -18,16 +18,14 @@ namespace SistemaDeTurnos.Controllers
             /*la vaina*/
         }
 
-        public IActionResult menuAdmin()
+        public IActionResult loginAdmin()
         {
-            ViewData["Message"] = "";
-
             return View();
-                
         }
+        
         public IActionResult credencial()
         {
-            ViewData["Message"] = "";
+            ViewData[""] = "";
 
             return View();
                 
@@ -35,54 +33,15 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult estatus()
         {
-            ViewData["Message"] = "";
+            ViewData[""] = "";
 
             return View();
 
         }
 
-        public IActionResult RegistroEstatus()
-        {
-            ViewData["Message"] = "";
-
-            return View();
-
-        }
-
-        public IActionResult agregarEstatus()
-        {
-            ViewData["Message"] = "";
-
-            return View();
-
-        }
-
-        public IActionResult detallesEstatus()
-        {
-            ViewData["Message"] = "";
-
-            return View();
-
-        }
-
-        public IActionResult Editar_Estatus()
-        {
-            ViewData["Message"] = "";
-
-            return View();
-
-        }
-
-        public IActionResult eliminarEstatus()
-        {
-            ViewData["Message"] = "";
-
-            return View();
-
-        }
         public IActionResult menu()
         {
-            ViewData["Message"] = "";
+            ViewData[""] = "";
 
             return View();
 
@@ -90,7 +49,7 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult menuDos()
         {
-            ViewData["Message"] = "";
+            ViewData[""] = "";
 
             return View();
 
@@ -98,39 +57,16 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult historial()
         {
-            ViewData["Message"] = "";
+            ViewData[""] = "";
 
             return View();
 
         }
 
-        public IActionResult cajaAsegurado()
-        {
-            ViewData["Message"] = "";
-
-            return View();
-
-        }
-
-        public IActionResult loginAdmin()
-        {
-            ViewData["Message"] = "";
-
-            return View();
-
-        }
-
-         public IActionResult historialDiario()
-        {
-            ViewData["Message"] = "";
-
-            return View();
-
-        }
         
         public IActionResult asegurado()
         {
-            ViewData["Message"] = "Your asegurado page.";
+            ViewData[""] = "Your asegurado page.";
 
             return View();
         }

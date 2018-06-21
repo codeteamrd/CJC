@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "inicio";
+}
+
+@{
+    Html.RenderPartial("_navSuperior");   
+}
+
+<a href="~/Admin/cajaAsegurado" class="btn btn-primary btn-lg btn-block">        
+ <h1><img src="~/images/caja.png" alt="" width="80" height="80"> <b>Caja</b></h1> 
+ <p>Panel de control de clientes</p>         
+</a>
+
+<a href="~/Home/index" class="btn btn-info btn-lg btn-block">        
+ <h1><img src="~/images/kpisouno.png" alt="" width="100" height="80"> <b>Kiosco piso 1</b></h1> 
+ <p>Dispositivo Kiosco del primer nivel</p>         
+</a>
+
+<a href="~/Home/index" class="btn btn-info btn-lg btn-block">        
+ <h1><img src="~/images/kpisotres.png" alt="" width="100" height="80"> <b>Kiosco piso 2</b></h1> 
+ <p>Dispositivo Kiosco del segundo nivel</p>         
+</a>
+
+<a href="~/Admin/historial" class="btn btn-success btn-lg btn-block">        
+ <h1><img src="~/images/sala.png" alt="" width="100" height="80"> <b>Sala de espera</b></h1> 
+ <p>Vista de turno para el pasiente</p>         
+</a>
+
+@{
+    Html.RenderPartial("_footerInferior");   
+}

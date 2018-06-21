@@ -4,56 +4,76 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+@{
+    Html.RenderPartial("_navSuperior");   
+}
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="~/Admin/inicio"><span class="glyphicon glyphicon-home"></a></li>
+    <li class="breadcrumb-item"><a href="~/Admin/cajaAsegurado">caja</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Registro usuario</li>
+  </ol>
+</nav>
+
+<!---->
+<h2>Registro Usuario</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create"  class="btn btn-primary" style="font-size: 25px;">Agregar</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nombres)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Apellidos)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Cedula)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.NumeroAsegurado)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Credencial)
-                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroAsegurado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Credencial)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombres)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Apellidos)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cedula)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumeroAsegurado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Credencial)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombres)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cedula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumeroAsegurado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Credencial)
+                </td>
+                <td>
+                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a class="btn btn-success" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+
+@{
+    Html.RenderPartial("_footerInferior");   
+}

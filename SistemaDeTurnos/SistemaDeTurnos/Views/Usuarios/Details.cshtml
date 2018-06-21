@@ -4,45 +4,74 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
+@{
+    Html.RenderPartial("_navSuperior");   
+}
 
-<div>
-    <h4>Usuarios</h4>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="~/Admin/inicio"><span class="glyphicon glyphicon-home"></a></li>
+    <li class="breadcrumb-item"><a href="~/Admin/cajaAsegurado">caja</a></li>
+    <li class="breadcrumb-item"><a href="~/Usuarios/Index">Registro usuario</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Detalles usuario</li>
+  </ol>
+</nav>
+
+<img src="~/images/Historial.png" alt="30x20" class="img-rounded" width="72" height="72">
+
+<h2>Detalles</h2>
+
+<div class="list-group">
+    <h4>Usuario</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Nombres)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Nombres)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Apellidos)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Apellidos)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Cedula)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Cedula)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.NumeroAsegurado)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.NumeroAsegurado)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Credencial)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Credencial)
-        </dd>
+        <div class="list-group-item">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombres)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Nombres)
+            </dd>
+        </div>
+        <div class="list-group-item">
+            <dt>
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Apellidos)
+            </dd>
+        </div>
+        <div class="list-group-item">
+            <dt>
+                @Html.DisplayNameFor(model => model.Cedula)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Cedula)
+            </dd>
+        </div>
+        <div class="list-group-item">
+            <dt>
+                @Html.DisplayNameFor(model => model.NumeroAsegurado)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.NumeroAsegurado)
+            </dd>
+        </div>
+        <div class="list-group-item">
+            <dt>
+                @Html.DisplayNameFor(model => model.Credencial)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Credencial)
+            </dd>
+        </div>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a class="btn btn-primary btn-lg btn-block" type="submit"style="text-align:center;" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+
+@{
+    Html.RenderPartial("_footerInferior");   
+}

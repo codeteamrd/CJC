@@ -4,9 +4,26 @@
     ViewData["Title"] = "Edit";
 }
 
-<h2>Edit</h2>
+@{
+    Html.RenderPartial("_navSuperior");   
+}
 
-<h4>Usuarios</h4>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="~/Admin/inicio"><span class="glyphicon glyphicon-home"></a></li>
+    <li class="breadcrumb-item"><a href="~/Admin/cajaAsegurado">caja</a></li>
+    <li class="breadcrumb-item"><a href="~/Usuarios/Index">Registro usuario</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Editar usuario</li>
+  </ol>
+</nav>
+
+<!---->
+
+<img src="~/images/Tuerca_Setting.png" alt="30x20" class="img-rounded" width="72" height="72">
+
+<h2>Editar</h2>
+
+<h4>Usuario</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -48,6 +65,10 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+
+@{
+    Html.RenderPartial("_footerInferior");   
+}
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
