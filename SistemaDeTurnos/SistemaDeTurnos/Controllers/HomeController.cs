@@ -15,7 +15,7 @@ namespace SistemaDeTurnos.Controllers
         public IActionResult Index()
         {
             return View();
-            /*la vaina*/
+            
         }
 
         public IActionResult loginAdmin()
@@ -40,6 +40,14 @@ namespace SistemaDeTurnos.Controllers
         }
 
         public IActionResult menu()
+        {
+            ViewData[""] = "";
+
+            return View();
+
+        }
+
+        public IActionResult opcionesimagenes()
         {
             ViewData[""] = "";
 
