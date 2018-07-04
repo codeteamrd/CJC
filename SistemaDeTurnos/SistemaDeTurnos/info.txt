@@ -1,9 +1,14 @@
 Pendientes  
 -----------------------------
+Prioridad=>
+insercion de datos "tunos"
+Validacion de credencial
+impresion
+--------------------------
+control de turnos
 LoginAdmin
-Validacion de la credencial
-Select con join para historial diario
-botones de traduccion
+salida de datos para historial
+traduccion
 *****************************
 Models 
 -----------------------------
