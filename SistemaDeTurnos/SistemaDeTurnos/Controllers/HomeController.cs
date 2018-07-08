@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using SistemaDeTurnos.Models;
 //
 using SistemaDeTurnos.Controllers;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 namespace SistemaDeTurnos.Controllers
 {
@@ -33,7 +36,6 @@ namespace SistemaDeTurnos.Controllers
 
         public IActionResult estatus()
         {
-            ViewData[""] = "";
 
             return View();
 
@@ -74,10 +76,50 @@ namespace SistemaDeTurnos.Controllers
         
         public IActionResult asegurado()
         {
-            ViewData[""] = "Your asegurado page.";
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult asegurado(string idioma)
+        {
+             /*ViewBag.textasegurado = "Asegurado";
+             ViewBag.textnoasegurado = "No asegurado";*/
+
+           
+            switch (idioma)
+            {
+                case "español":
+                  ViewBag.textasegurado = "Asegurado";
+                  ViewBag.textnoasegurado = "No asegurado";
+                 break;
+                case "ingles":
+                  ViewBag.textasegurado = "Insured";                 
+                  ViewBag.textnoasegurado = "Uninsured";
+                 break;
+                 default:
+                  ViewBag.textasegurado = "Asegurado";
+                  ViewBag.textnoasegurado = "No asegurado";
+                 break;
+            }
 
             return View();
         }
+
+    
+        /*[HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> asegurado([Bind("seguro")] Turnos turnos)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(turnos);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(asegurado));
+            }
+            return View(asegurado);
+        }*/
+
 
         public IActionResult Error()
         {

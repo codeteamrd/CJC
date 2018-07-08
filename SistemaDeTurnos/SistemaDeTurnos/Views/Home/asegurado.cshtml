@@ -1,3 +1,5 @@
+@*model SistemaDeTurnos.Models.Turnos-->*@
+
 @{
     ViewData["Title"] = "asegurado";
 }
@@ -5,6 +7,7 @@
 <!--<h1 class="tipografia1">Seguro Medico</h1>-->
 
 <!--banderas-->
+
     <div class="col-xs-2">
     <ul class="" >
         <!--<li class="" dir="ltr">
@@ -14,13 +17,22 @@
         </li>-->
             
         <li class="lang-active" dir="ltr">
-            <a href="/es/">
+            <form method="post">
+            <input type="hidden" value="español" name="idioma" id="" />
+            <button type="submit">
                 <img src="~/images/es.png" alt="Español (España)" title="Español (España)" width="44" height="32">
-            </a>
+            </button>
+            </form>
         </li>
 <br>
         <li class="" dir="ltr">
-            <a href="/en/"> <img src="~/images/ingla.png" alt="English (UK)" title="English (UK)" width="44" height="32"></a>
+            <form method="post">
+            <input type="hidden" value="ingles" name="idioma" id="" />
+             <button type="submit"> 
+               <img src="~/images/ingla.png" alt="English (UK)" title="English (UK)" width="44" height="32">
+             </button>
+             </form>
+             
         </li>
     </ul>
         </div>
@@ -29,12 +41,28 @@
     <img src="~/images/img_logo.png" alt="IMG" class="img-rounded" width="700" height="200">
 </div>
 
+
+
 <!--botones asegurado-->
 
 <br />
 
 <div class="col-xs-12">
-    <a href="~/Home/estatus" class="btn btn-primary btn-lg" style="width:100%;text-align:center;font-size: 50px;border-width: 30px;">Asegurado</a>
-    <a href="~/Home/estatus" class="btn btn-danger btn-lg" style="width:100%;text-align:center;font-size: 50px;border-width: 30px;">No asegurado</a>
+    <a href="~/Home/estatus" class="btn btn-primary btn-lg" style="width:100%;text-align:center;font-size: 50px;border-width: 30px;">@ViewBag.textasegurado</a>
+    <a href="~/Home/estatus" class="btn btn-danger btn-lg" style="width:100%;text-align:center;font-size: 50px;border-width: 30px;">@ViewBag.textnoasegurado</a>
 </div>
 
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+<!--
+     onclick = "location='~/Home/menu'"
+     src = "~/Home/menu"
+     href = "~/Home/menu" 
+
+     http://www.beansoftware.com/ASP.NET-Tutorials/Printing-Reporting.aspx
+-->
