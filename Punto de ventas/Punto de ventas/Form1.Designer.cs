@@ -1277,6 +1277,8 @@
             this.textBox_Id.Name = "textBox_Id";
             this.textBox_Id.Size = new System.Drawing.Size(198, 21);
             this.textBox_Id.TabIndex = 24;
+            this.textBox_Id.TextChanged += new System.EventHandler(this.textBox_Id_TextChanged);
+            this.textBox_Id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Id_KeyPress);
             // 
             // label_Id
             // 
@@ -1294,6 +1296,8 @@
             this.textBox_PagoscCliente.Name = "textBox_PagoscCliente";
             this.textBox_PagoscCliente.Size = new System.Drawing.Size(198, 22);
             this.textBox_PagoscCliente.TabIndex = 22;
+            this.textBox_PagoscCliente.TextChanged += new System.EventHandler(this.textBox_PagoscCliente_TextChanged);
+            this.textBox_PagoscCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_PagoscCliente_KeyPress);
             // 
             // label33
             // 
@@ -1316,6 +1320,7 @@
             this.radioButton_PagosDeudas.TabStop = true;
             this.radioButton_PagosDeudas.Text = "Pagos de deudas";
             this.radioButton_PagosDeudas.UseVisualStyleBackColor = true;
+            this.radioButton_PagosDeudas.CheckedChanged += new System.EventHandler(this.radioButton_PagosDeudas_CheckedChanged);
             // 
             // radioButton_IngresarCliente
             // 
@@ -1327,6 +1332,7 @@
             this.radioButton_IngresarCliente.TabStop = true;
             this.radioButton_IngresarCliente.Text = "Ingresar cliente";
             this.radioButton_IngresarCliente.UseVisualStyleBackColor = true;
+            this.radioButton_IngresarCliente.CheckedChanged += new System.EventHandler(this.radioButton_IngresarCliente_CheckedChanged);
             // 
             // label_PagoCliente
             // 
@@ -1359,6 +1365,8 @@
             this.textBox_Apellido.Name = "textBox_Apellido";
             this.textBox_Apellido.Size = new System.Drawing.Size(198, 22);
             this.textBox_Apellido.TabIndex = 16;
+            this.textBox_Apellido.TextChanged += new System.EventHandler(this.textBox_Apellido_TextChanged);
+            this.textBox_Apellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Apellido_KeyPress);
             // 
             // label_Apellido
             // 
@@ -1402,6 +1410,8 @@
             this.textBox_Telefono.Name = "textBox_Telefono";
             this.textBox_Telefono.Size = new System.Drawing.Size(198, 22);
             this.textBox_Telefono.TabIndex = 6;
+            this.textBox_Telefono.TextChanged += new System.EventHandler(this.textBox_Telefono_TextChanged);
+            this.textBox_Telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Telefono_KeyPress);
             // 
             // label_Telefono
             // 
@@ -1419,6 +1429,8 @@
             this.textBox_Direccion.Name = "textBox_Direccion";
             this.textBox_Direccion.Size = new System.Drawing.Size(198, 22);
             this.textBox_Direccion.TabIndex = 4;
+            this.textBox_Direccion.TextChanged += new System.EventHandler(this.textBox_Direccion_TextChanged);
+            this.textBox_Direccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Direccion_KeyPress);
             // 
             // label_Direccion
             // 
@@ -1437,6 +1449,8 @@
             this.textBox_Nombre.Name = "textBox_Nombre";
             this.textBox_Nombre.Size = new System.Drawing.Size(198, 21);
             this.textBox_Nombre.TabIndex = 2;
+            this.textBox_Nombre.TextChanged += new System.EventHandler(this.textBox_Nombre_TextChanged);
+            this.textBox_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Nombre_KeyPress);
             // 
             // label_Nombre
             // 
@@ -3297,6 +3311,7 @@
             this.button_Clientes.Text = "Clientes";
             this.button_Clientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button_Clientes.UseVisualStyleBackColor = true;
+            this.button_Clientes.Click += new System.EventHandler(this.button_Clientes_Click);
             // 
             // button_Ventas
             // 
