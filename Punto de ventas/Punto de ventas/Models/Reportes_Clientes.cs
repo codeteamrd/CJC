@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 
 namespace Punto_de_ventas.Models
 {
-    public class Clientes
+    public class Reportes_Clientes
     {
         [PrimaryKey, Identity]
+        public int IdRegistro { get; set; }
         public int IdCliente { get; set; }
+        public string SaldoActual { get; set; }
+        public string FechaActual { get; set; }
+        public string UltimoPago { get; set; }
+        public string FechaPago { get; set; }
         public string ID { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string Direccion { get; set; }
-        public string Telefono { get; set; }
     }
 }
