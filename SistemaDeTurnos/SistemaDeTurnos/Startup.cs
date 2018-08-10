@@ -27,6 +27,17 @@ namespace SistemaDeTurnos
             services.AddDbContext<SistemaDeTurnosContex>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                // Set a short timeout for easy testing.
+               // options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.HttpOnly = true;
+            });
+
+
             services.AddMvc();
         }
 
@@ -44,12 +55,15 @@ namespace SistemaDeTurnos
             }
 
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=loginAdmin}/{id?}");
+
+                routes.MapRoute("setStatus", "setstatus/{id}",
+                    defaults: new { controller = "Home", action = "setStatus"});
             });
         }
     }

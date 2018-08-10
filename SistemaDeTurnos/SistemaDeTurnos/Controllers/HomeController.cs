@@ -9,7 +9,7 @@ using SistemaDeTurnos.Models;
 using SistemaDeTurnos.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
-
+using Microsoft.AspNetCore.Http;
 
 namespace SistemaDeTurnos.Controllers
 {
@@ -34,12 +34,31 @@ namespace SistemaDeTurnos.Controllers
                 
         }
 
+        public IActionResult setStatus(int id)
+        {
+            var status = id == 1 ? "Asegurado" : "No asegurado";
+            HttpContext.Session.SetString("status", status);
+            ViewBag.status = status;
+            return View("estatus");
+            
+        }
+
         public IActionResult estatus()
         {
 
             return View();
 
         }
+
+        public IActionResult estatus2()
+        {
+
+            return View();
+
+        }
+
+
+
 
         public IActionResult menu()
         {
@@ -61,9 +80,19 @@ namespace SistemaDeTurnos.Controllers
         {
             ViewData[""] = "";
 
+            return View( );
+
+        }
+
+        public IActionResult index2()
+        {
+            ViewData[""] = "";
+
             return View();
 
         }
+
+
 
         public IActionResult historial()
         {
@@ -79,32 +108,13 @@ namespace SistemaDeTurnos.Controllers
             return View();
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult asegurado(string idioma)
+        public IActionResult asegurado2()
         {
-             /*ViewBag.textasegurado = "Asegurado";
-             ViewBag.textnoasegurado = "No asegurado";*/
-
-           
-            switch (idioma)
-            {
-                case "español":
-                  ViewBag.textasegurado = "Asegurado";
-                  ViewBag.textnoasegurado = "No asegurado";
-                 break;
-                case "ingles":
-                  ViewBag.textasegurado = "Insured";                 
-                  ViewBag.textnoasegurado = "Uninsured";
-                 break;
-                 default:
-                  ViewBag.textasegurado = "Asegurado";
-                  ViewBag.textnoasegurado = "No asegurado";
-                 break;
-            }
-
             return View();
         }
+
+
+
 
     
         /*[HttpPost]
