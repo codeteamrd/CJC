@@ -43,6 +43,16 @@ namespace SistemaDeTurnos.Controllers
             
         }
 
+        public IActionResult setMenu(int id)
+        {
+            var menu = id == 1 ? "Comun" : "Discapacitado";
+            HttpContext.Session.SetString("menu", menu);
+            ViewBag.menu = menu;
+            return View("menu");
+
+        }
+        
+
         public IActionResult estatus()
         {
 

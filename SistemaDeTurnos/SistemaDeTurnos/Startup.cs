@@ -64,6 +64,12 @@ namespace SistemaDeTurnos
 
                 routes.MapRoute("setStatus", "setstatus/{id}",
                     defaults: new { controller = "Home", action = "setStatus"});
+
+                routes.MapRoute("setMenu", "setMenu/{id}",
+                    defaults: new { controller = "Home", action = "setMenu" });
+
+
+               
             });
         }
     }
