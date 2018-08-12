@@ -78,34 +78,6 @@ namespace SistemaDeTurnos.Controllers
         {
             return View();
         }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult asegurado(string idioma)
-        {
-             /*ViewBag.textasegurado = "Asegurado";
-             ViewBag.textnoasegurado = "No asegurado";*/
-
-           
-            switch (idioma)
-            {
-                case "español":
-                  ViewBag.textasegurado = "Asegurado";
-                  ViewBag.textnoasegurado = "No asegurado";
-                 break;
-                case "ingles":
-                  ViewBag.textasegurado = "Insured";                 
-                  ViewBag.textnoasegurado = "Uninsured";
-                 break;
-                 default:
-                  ViewBag.textasegurado = "Asegurado";
-                  ViewBag.textnoasegurado = "No asegurado";
-                 break;
-            }
-
-            return View();
-        }
-
     
         /*[HttpPost]
         [ValidateAntiForgeryToken]
