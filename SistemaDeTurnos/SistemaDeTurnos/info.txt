@@ -1,14 +1,25 @@
+Reaolizado
+-----------------------------
+Interfaz grafica cliente
+Interfaz grafica administrador
+Crud-registro de clientes
+modelos y db
+recoleccion de datos de los ticket
+traduccion "en proceso"
+
 Pendientes  
 -----------------------------
-Prioridad=>
-insercion de datos "tunos"
-Validacion de credencial
+Prioridad
+{
+insercion de datos "tunos" a la db
 impresion
---------------------------
-control de turnos
-LoginAdmin
-salida de datos para historial
-traduccion
+Validacion de credencial
+}
+lista dinamica de turnos en todas las areas
+control de turnos de la caja o facturacion
+control de tunos de los medicos y/o doctores 
+login de los usuarios administradores
+
 *****************************
 Models 
 -----------------------------
