@@ -9,7 +9,7 @@ using SistemaDeTurnos.Models;
 using SistemaDeTurnos.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
-
+using Microsoft.AspNetCore.Http;
 
 namespace SistemaDeTurnos.Controllers
 {
@@ -39,6 +39,14 @@ namespace SistemaDeTurnos.Controllers
 
             return View();
 
+        }
+
+        public IActionResult setAsegurado(int id,string Seguro)
+        {
+            HttpContext.Session.SetString("Seguro", Seguro);
+            Seguro = id == 1 ? "Asegurado" : "No asegurado ";
+            ViewBag.Seguro = Seguro;
+            return View("status");
         }
 
         public IActionResult menu()
