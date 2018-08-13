@@ -60,15 +60,13 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
-        public IActionResult estatus2()
-        {
-
-            return View();
-
-        }
-
-
-
+        //public IActionResult setAsegurado(int id,string Seguro)
+        //{
+        //    HttpContext.Session.SetString("Seguro", Seguro);
+        //    Seguro = id == 1 ? "Asegurado" : "No asegurado ";
+        //    ViewBag.Seguro = Seguro;
+        //    return View("status");
+        //}
 
         public IActionResult menu()
         {
@@ -118,6 +116,7 @@ namespace SistemaDeTurnos.Controllers
             return View();
         }
 
+
         public IActionResult asegurado2()
         {
             return View();
@@ -125,8 +124,6 @@ namespace SistemaDeTurnos.Controllers
 
 
 
-
-    
         /*[HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> asegurado([Bind("seguro")] Turnos turnos)

@@ -1,0 +1,27 @@
+1.¿Crees que la Programación Orientada a Objetos es importante?¿Por qué?
+
+Como aspirante a programador que soy, he tenido la oportunidad de estudiar y trabajar 
+con POO en múltiples ocasiones, es sin duda el paradicma de programación más influyente
+de los últimos tiempos, y creo que entre las principales razones por la cual
+este modelo de desarrollo ha sido tan importante es por que optimizá el desarrollo de código
+ya que te permite reutilizar el mismo cuantas veces lo necesites.
+
+y es tan alta la confianza a este modelo de programación, que las empresas más importantes de desarrollo
+de software han construido la infraestructura de sus sistemas basados en este paradigma, un ejemplo 
+seria Microsoft, cuya plataforma de desarrollo .net core, hace uso de este modelo, por ejemplo cuando 
+creamos un proyecto MVC la manera más optima de utilizar los recursos de .net core es mediante la herencia
+de los métodos pre desarrollados con los que cuenta este framework, siendo la "herencia" un pilar 
+Importante de la poo.
+
+2.¿Por qué crees que se originó la POO?
+
+Creo que a medida que los programas se acian más complejos y más largos en cuanto a código,
+entre otras limitantes que tenian el resto de los paradigmas de programación en los diferentes lenguajes,
+estas y otros más problemas llevaron a los ingenieros a investigar y mejorar versiones de lenguajes que permitieran
+el uso de clases, abstracción, herencia, polimorfismo entre otros que llegaron a convertirse en lo que son 
+hoy en dia.
+
+3.¿Que ventajas encuentras en la POO frente a diferentes paradigmas?
+
+Como mencione anterior mente, nos da laq facilidad de reutilizar codigo, nos permite crear ditintos tipos de clases
+y nos da la oportunidad de heredar sus atributos desde cualquier parte de nuestro programa, entre otras cosas.

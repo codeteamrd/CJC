@@ -26,6 +26,16 @@ namespace SistemaDeTurnos
         {
             services.AddDbContext<SistemaDeTurnosContex>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
+
+            services.AddDistributedMemoryCache();
+
+        services.AddSession(options =>
+        {
+            // Set a short timeout for easy testing.
+            options.IdleTimeout = TimeSpan.FromSeconds(10);
+            options.Cookie.HttpOnly = true;
+        });
 
 
             services.AddDistributedMemoryCache();
@@ -39,6 +49,8 @@ namespace SistemaDeTurnos
 
 
             services.AddMvc();
+            
+            services.AddRouting();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +60,7 @@ namespace SistemaDeTurnos
             {
                 app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
-            }
+            } 
             else
             {
                 app.UseExceptionHandler("/Home/Error");
