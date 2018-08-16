@@ -20,6 +20,7 @@ namespace SistemaDeTurnos.Controllers
             return View();
             
         }
+        /*klk*/
 
         public IActionResult loginAdmin()
         {
