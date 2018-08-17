@@ -19,6 +19,7 @@ namespace SistemaDeTurnos.Controllers
             return View();
             
         }
+        /*klk*/
 
         public IActionResult loginAdmin()
         {
@@ -33,6 +34,25 @@ namespace SistemaDeTurnos.Controllers
                 
         }
 
+        public IActionResult setStatus(int id)
+        {
+            var status = id == 1 ? "Asegurado" : "No asegurado";
+            HttpContext.Session.SetString("status", status);
+            ViewBag.status = status;
+            return View("estatus");
+            
+        }
+
+        public IActionResult setMenu(int id)
+        {
+            var menu = id == 1 ? "Comun" : "Discapacitado";
+            HttpContext.Session.SetString("menu", menu);
+            ViewBag.menu = menu;
+            return View("menu");
+
+        }
+        
+
         public IActionResult estatus()
         {
 
@@ -40,13 +60,13 @@ namespace SistemaDeTurnos.Controllers
 
         }
 
-        public IActionResult setAsegurado(int id,string Seguro)
-        {
-            HttpContext.Session.SetString("Seguro", Seguro);
-            Seguro = id == 1 ? "Asegurado" : "No asegurado ";
-            ViewBag.Seguro = Seguro;
-            return View("status");
-        }
+        //public IActionResult setAsegurado(int id,string Seguro)
+        //{
+        //    HttpContext.Session.SetString("Seguro", Seguro);
+        //    Seguro = id == 1 ? "Asegurado" : "No asegurado ";
+        //    ViewBag.Seguro = Seguro;
+        //    return View("status");
+        //}
 
         public IActionResult menu()
         {
@@ -68,9 +88,19 @@ namespace SistemaDeTurnos.Controllers
         {
             ViewData[""] = "";
 
+            return View( );
+
+        }
+
+        public IActionResult index2()
+        {
+            ViewData[""] = "";
+
             return View();
 
         }
+
+
 
         public IActionResult historial()
         {
@@ -85,7 +115,15 @@ namespace SistemaDeTurnos.Controllers
         {
             return View();
         }
-    
+
+
+        public IActionResult asegurado2()
+        {
+            return View();
+        }
+
+
+
         /*[HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> asegurado([Bind("seguro")] Turnos turnos)

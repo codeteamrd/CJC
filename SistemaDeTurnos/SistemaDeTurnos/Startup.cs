@@ -37,6 +37,17 @@ namespace SistemaDeTurnos
             options.Cookie.HttpOnly = true;
         });
 
+
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                // Set a short timeout for easy testing.
+               // options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.HttpOnly = true;
+            });
+
+
             services.AddMvc();
             
             services.AddRouting();
@@ -57,17 +68,19 @@ namespace SistemaDeTurnos
 
             app.UseStaticFiles();
             app.UseSession();
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=loginAdmin}/{id?}");
-           
-            routes.MapRoute(
-                    name: "setAsegurado",
-                    template: "{controller=Home}/{action=setAsegurado}/{id?}");
-           
+
+                routes.MapRoute("setStatus", "setstatus/{id}",
+                    defaults: new { controller = "Home", action = "setStatus"});
+
+                routes.MapRoute("setMenu", "setMenu/{id}",
+                    defaults: new { controller = "Home", action = "setMenu" });
+
+
                
             });
         }

@@ -27,6 +27,14 @@ namespace SistemaDeTurnos.Controllers
             return View();
 
         }
+
+         public IActionResult controlMedico()
+        {
+            ViewData[""] = "";
+
+            return View();
+
+        }
         
         public IActionResult historialDiario()
         {
